@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Kharido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Kharido</div>
+        <button class="hamburger" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Deals</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Today's Deals</a></li>
+                        <li><a href="#">Upcoming Deals</a></li>
+                    </ul>
+                </li>
+                <li><a href="cart.html" id="cart-link"><span class="cart-icon">🛒</span><span class="cart-badge" id="cart-badge">0</span> Cart</a></li>
+                <li><a href="./account.html" id="account-link">Account</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="cart-page-section">
+            <h2>Your Shopping Cart</h2>
+            <div class="cart-page-items" id="cart-page-items"></div>
+            <div class="cart-page-footer">
+                <span id="cart-page-total"></span>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kharido. All rights reserved.</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html> 

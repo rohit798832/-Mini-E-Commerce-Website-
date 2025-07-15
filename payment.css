@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f5f5f7;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-container {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1.5px solid #e0e0e5;
+    position: relative;
+}
+.payment-box h2 {
+    color: #111;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    font-weight: 700;
+}
+.product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f7;
+    border-radius: 10px;
+    padding: 0.8rem 1.1rem;
+    margin-bottom: 1.7rem;
+    font-weight: 500;
+    color: #222;
+    font-size: 1.13rem;
+}
+#payment-form label {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #222;
+    font-size: 1.05rem;
+    font-family: inherit;
+}
+#payment-form input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1.5px solid #e0e0e5;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    background: #f8f8fa;
+    color: #222;
+    margin-bottom: 0.7rem;
+    font-family: inherit;
+    transition: border 0.2s;
+}
+#payment-form input:focus {
+    border: 1.5px solid #0071e3;
+    outline: none;
+}
+.row {
+    display: flex;
+    gap: 1rem;
+}
+.col {
+    flex: 1;
+}
+.pay-btn {
+    margin-top: 1.7rem;
+    background: #0071e3;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.85rem 1.7rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: background 0.2s, transform 0.2s;
+    font-family: inherit;
+    letter-spacing: 0.5px;
+}
+.pay-btn:hover {
+    background: #005bb5;
+    transform: scale(1.04);
+}
+.success-message {
+    display: none;
+    margin-top: 1.7rem;
+    color: #0071e3;
+    background: #f5f5f7;
+    border-radius: 10px;
+    padding: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.13rem;
+}
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2.5px solid #e0e0e5;
+    border-top: 2.5px solid #0071e3;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.popup-message {
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.98);
+    background: #fff;
+    color: #d32d2f;
+    border: 1.5px solid #ffd6d6;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    padding: 0.9rem 2.2rem;
+    font-size: 1.08rem;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.popup-message.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+@media (max-width: 600px) {
+    .payment-box {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        max-width: 98vw;
+    }
+    .product-details {
+        flex-direction: column;
+        gap: 0.3rem;
+        font-size: 1rem;
+    }
+    .row {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+} 

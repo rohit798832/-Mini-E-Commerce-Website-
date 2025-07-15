@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Ecommerce</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="account.html">Account</a>
+        </nav>
+    </header>
+    <main class="account-container">
+        <h1>Find your order.</h1>
+        <div class="account-sections">
+            <section class="sign-in-section">
+                <h2>Sign in with your Account</h2>
+                <form id="signInForm">
+                    <input type="text" id="signin-email" placeholder="Email or Phone Number" required>
+                    <div class="remember-row">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+                    <button type="submit">Sign In</button>
+                    <a href="#" class="forgot-link">Forgotten your password?</a>
+                </form>
+            </section>
+            <section class="order-lookup-section">
+                <h2>Look it up with your order number.</h2>
+                <form id="orderLookupForm">
+                    <input type="text" id="order-number" placeholder="Order number" required>
+                    <input type="email" id="order-email" placeholder="Email Address" required>
+                    <button type="submit">Continue</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="account.js"></script>
+</body>
+</html> 

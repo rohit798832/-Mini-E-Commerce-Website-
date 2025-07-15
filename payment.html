@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Kharido</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-box">
+            <h2>Secure Payment</h2>
+            <div class="product-details">
+                <span id="product-name"></span>
+                <span id="product-price"></span>
+            </div>
+            <form id="payment-form">
+                <label for="name">Name on Card</label>
+                <input type="text" id="name" required autocomplete="cc-name">
+                <label for="card">Card Number</label>
+                <input type="text" id="card" maxlength="16" required autocomplete="cc-number" inputmode="numeric" pattern="\d{16}">
+                <div class="row">
+                    <div class="col">
+                        <label for="expiry">Expiry</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required autocomplete="cc-exp">
+                    </div>
+                    <div class="col">
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" maxlength="3" required autocomplete="cc-csc" inputmode="numeric" pattern="\d{3}">
+                    </div>
+                </div>
+                <button type="submit" class="pay-btn">Pay Now</button>
+            </form>
+            <div id="success-message" class="success-message"></div>
+        </div>
+    </div>
+    <script src="payment.js"></script>
+</body>
+</html> 

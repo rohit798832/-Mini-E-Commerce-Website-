@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kharido - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Kharido</div>
+        <button class="hamburger" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Deals</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Today's Deals</a></li>
+                        <li><a href="#">Upcoming Deals</a></li>
+                    </ul>
+                </li>
+                <li><a href="cart.html" id="cart-link"><span class="cart-icon">🛒</span><span class="cart-badge" id="cart-badge">0</span> Cart</a></li>
+                <li><a href="./account.html" id="account-link">Account</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+    </header>
+    <main>
+        <section class="product-grid">
+            <!-- Product cards will go here -->
+        </section>
+        <section class="winter-special">
+            <h2>Winter Special</h2>
+            <div class="winter-cards">
+                <div class="product-card">
+                    <img src="./assest/card1.webp" alt="Red Wool Sweater">
+                    <h3>Red Wool Sweater</h3>
+                    <p>Price: ₹499</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Red Wool Sweater" data-price="499">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assest/card2.webp" alt="Blue Pullover">
+                    <h3>Blue Pullover</h3>
+                    <p>Price: ₹470</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Blue Pullover" data-price="470">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assest/card3.webp" alt="Classic Cardigan">
+                    <h3>Classic Cardigan</h3>
+                    <p>Price: ₹450</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Classic Cardigan" data-price="450">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assest/card4.webp" alt="Winter Hoodie">
+                    <h3>Winter Hoodie</h3>
+                    <p>Price: ₹425</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Winter Hoodie" data-price="425">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assest/card5.webp" alt="Knitted Sweater">
+                    <h3>Knitted Sweater</h3>
+                    <p>Price: ₹410</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Knitted Sweater" data-price="410">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assest/card6.webp" alt="Grey Zip Sweater">
+                    <h3>Grey Zip Sweater</h3>
+                    <p>Price: ₹495</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Grey Zip Sweater" data-price="495">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assest/card4.webp" alt="Patterned Wool Pullover">
+                    <h3>Patterned Wool Pullover</h3>
+                    <p>Price: ₹480</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Patterned Wool Pullover" data-price="480">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assest/card8.webp" alt="Fleece Lined Hoodie">
+                    <h3>Fleece Lined Hoodie</h3>
+                    <p>Price: ₹465</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Fleece Lined Hoodie" data-price="465">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shoes-collection">
+            <h2>Shoes Collection</h2>
+            <div class="shoes-cards">
+                <div class="product-card">
+                    <img src="./shoes/card1.jpeg" alt="Nike Air Max">
+                    <h3>Nike Air Max</h3>
+                    <p>Price: ₹1,999</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Nike Air Max" data-price="1999">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./shoes/card2.jpeg" alt="Nike Revolution 6">
+                    <h3>Nike Revolution 6</h3>
+                    <p>Price: ₹1,499</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Nike Revolution 6" data-price="1499">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./shoes/card3.jpeg" alt="Nike Downshifter">
+                    <h3>Nike Downshifter</h3>
+                    <p>Price: ₹1,299</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Nike Downshifter" data-price="1299">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./shoes/card4.jpeg" alt="Nike Court Vision">
+                    <h3>Nike Court Vision</h3>
+                    <p>Price: ₹1,099</p>
+                    <div class="card-actions">
+                        <button class="buy-btn" data-product="Nike Court Vision" data-price="1099">Buy</button>
+                        <button class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Kharido. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
